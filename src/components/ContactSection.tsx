@@ -11,7 +11,7 @@ export default function ContactSection({ currentLang, onOpenConsultation }: Cont
     headlinePart2: "jonlantiramiz!",
     desc: "Sizda yangi startap, e-commerce yoki 3D interaktiv brend loyihasi bormi? Texnik imkoniyatlar va dizayn konsepsiyasini bepul muhokama qilamiz.",
     telegramBtn: "Telegram orqali yozish",
-    emailBtn: "hello@aura.dev",
+    emailBtn: "hello@khusanov.dev",
     quickQuoteBtn: "Loyiha anketasini to'ldirish",
     responseTime: "O'rtacha javob vaqti: 2 soat",
     nda: "NDA Kafolati",
@@ -22,7 +22,7 @@ export default function ContactSection({ currentLang, onOpenConsultation }: Cont
     headlinePart2: "",
     desc: "Planning a startup launch, immersive e-commerce showroom, or high-tech 3D brand experience? Let's discuss technical capabilities and creative direction free of charge.",
     telegramBtn: "Message on Telegram",
-    emailBtn: "hello@aura.dev",
+    emailBtn: "hello@khusanov.dev",
     quickQuoteBtn: "Fill Project Brief",
     responseTime: "Average reply: under 2 hours",
     nda: "NDA Guaranteed",
@@ -58,7 +58,7 @@ export default function ContactSection({ currentLang, onOpenConsultation }: Cont
             {/* Actions */}
             <div className="flex flex-wrap justify-center items-center gap-4 pt-3">
               <a
-                href="https://t.me"
+                href="https://t.me/Khusanov_off"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 sm:px-8 py-3.5 rounded-xl bg-gradient-to-r from-[#38bdf8] to-[#7bd0ff] text-[#00354a] font-['Space_Grotesk'] text-sm sm:text-base font-bold shadow-xl hover:shadow-[0_0_32px_rgba(56,189,248,0.5)] hover:scale-105 transition-all duration-200"

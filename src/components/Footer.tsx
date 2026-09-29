@@ -3,24 +3,28 @@ interface FooterProps {
 }
 
 export default function Footer({ currentLang }: FooterProps) {
+  const currentYear = new Date().getFullYear();
+
   const t = currentLang === 'uz' ? {
     status: "Available for Worldwide Projects",
     desc: "Raqamli mahsulotlar va yuqori darajadagi 3D WebGL tajribalarini loyihalash hamda muhandislik amaliyoti.",
-    copyright: "© 2025 AURA.DEV // NEXUS.3D. Barcha huquqlar himoyalangan.",
+    copyright: `© ${currentYear} KHUSANOV.DEV // NEXUS.3D. Barcha huquqlar himoyalangan.`,
+    creatorBtn: "Saytni Xumoyun yaratdi",
     location: "Toshkent / Global Remote",
     techList: "GLSL • Three.js • WebGPU",
   } : {
     status: "Available for Worldwide Projects",
     desc: "High-end 3D WebGL digital product design and creative engineering practice.",
-    copyright: "© 2025 AURA.DEV // NEXUS.3D. All rights reserved.",
+    copyright: `© ${currentYear} KHUSANOV.DEV // NEXUS.3D. All rights reserved.`,
+    creatorBtn: "Created by Xumoyun",
     location: "Tashkent / Global Remote",
     techList: "GLSL • Three.js • WebGPU",
   };
 
   const socials = [
-    { name: 'GitHub', icon: 'terminal', url: 'https://github.com' },
+    { name: 'GitHub', icon: 'terminal', url: 'https://github.com/khusanovoffical' },
+    { name: 'Telegram', icon: 'send', url: 'https://t.me/Khusanov_off' },
     { name: 'LinkedIn', icon: 'work', url: 'https://linkedin.com' },
-    { name: 'Telegram', icon: 'send', url: 'https://t.me' },
     { name: 'Dribbble', icon: 'palette', url: 'https://dribbble.com' },
   ];
 
@@ -44,8 +48,25 @@ export default function Footer({ currentLang }: FooterProps) {
             </p>
           </div>
 
-          {/* Social Links */}
+          {/* Social Links & Creator Badge Button */}
           <div className="flex flex-wrap items-center gap-3 font-['JetBrains_Mono'] text-xs">
+            {/* Saytni Xumoyun yaratdi Button */}
+            <a
+              href="https://t.me/Khusanov_off"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#191c21] hover:bg-[#282a30] text-[#38bdf8] hover:text-[#7bd0ff] font-['Space_Grotesk'] text-xs sm:text-sm font-semibold border border-[#38bdf8]/40 shadow-[0_0_16px_rgba(56,189,248,0.25)] hover:shadow-[0_0_24px_rgba(56,189,248,0.45)] hover:scale-105 transition-all group"
+              title="Dasturchi bilan bog'lanish: @Khusanov_off"
+            >
+              <span className="material-symbols-outlined text-[18px] text-[#38bdf8] group-hover:rotate-12 transition-transform">
+                code
+              </span>
+              <span>{t.creatorBtn}</span>
+              <span className="material-symbols-outlined text-[15px] opacity-70 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">
+                arrow_outward
+              </span>
+            </a>
+
             {socials.map((s) => (
               <a
                 key={s.name}
@@ -63,7 +84,10 @@ export default function Footer({ currentLang }: FooterProps) {
 
         {/* Bottom bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-white/5 text-[#bdc8d1] font-['JetBrains_Mono'] text-xs">
-          <div>{t.copyright}</div>
+          <div className="flex items-center gap-3">
+            <span>{t.copyright}</span>
+          </div>
+
           <div className="flex items-center gap-3">
             <span className="flex items-center gap-1">
               <span className="material-symbols-outlined text-[#38bdf8] text-[14px]">bolt</span>

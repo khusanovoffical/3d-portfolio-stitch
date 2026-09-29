@@ -88,7 +88,7 @@ export default function ProjectsSection({
       caseNumber: 'CASE STUDY // 03',
       caseSubtitle: 'AUTOMOTIVE 3D CONFIG',
       badgeClass: 'text-[#8ed5ff]',
-      title: 'AURA LUXURY CAR CONFIGURATOR',
+      title: 'KHUSANOV LUXURY CAR CONFIGURATOR',
       desc: currentLang === 'uz'
         ? "Mijozlar uchun real vaqtda avtomobil tashqi rangi, diskasi, uglerod tolalari va charm salonini to'liq moslashtirish imkonini beruvchi fotorealistik WebGL konfigurator tizimi."
         : "Photorealistic WebGL vehicle configurator allowing clients to customize exterior paint, carbon fiber aero packages, custom forged wheels, and bespoke interiors in real time.",
@@ -97,7 +97,7 @@ export default function ProjectsSection({
       hudBottomLeft: 'PBR REAL-TIME RAYTRACING',
       icon: 'directions_car',
       onPrimaryClick: onOpenCarConfig,
-      onDocsClick: () => onOpenTechDocs('AURA LUXURY CAR CONFIGURATOR'),
+      onDocsClick: () => onOpenTechDocs('KHUSANOV LUXURY CAR CONFIGURATOR'),
     },
   ];
 
@@ -167,9 +167,11 @@ export default function ProjectsSection({
               >
                 {/* Media Column */}
                 <div
-                  className={`lg:col-span-7 relative group overflow-hidden rounded-xl bg-[#0c0e13] border border-white/5 ${
+                  onClick={p.onPrimaryClick}
+                  className={`lg:col-span-7 relative group overflow-hidden rounded-xl bg-[#0c0e13] border border-white/5 cursor-pointer hover:border-[#38bdf8]/40 transition-all ${
                     isFintech ? 'order-1 lg:order-2' : ''
                   }`}
+                  title="3D Tajribani ochish uchun bosing"
                 >
                   {imageErrors[p.id] ? (
                     <div className="w-full h-[320px] sm:h-[400px] bg-gradient-to-br from-[#111319] via-[#1d2025] to-[#111319] flex flex-col items-center justify-center p-6 text-center">
@@ -186,7 +188,15 @@ export default function ProjectsSection({
                         onError={() => handleImageError(p.id)}
                         className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent pointer-events-none" />
+
+                      {/* Click to launch hover hint badge */}
+                      <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                        <div className="px-4 py-2 rounded-xl bg-[#111319]/90 backdrop-blur-md text-[#38bdf8] font-['Space_Grotesk'] text-sm font-bold border border-[#38bdf8]/40 shadow-xl flex items-center gap-2">
+                          <span className="material-symbols-outlined text-[18px]">play_circle</span>
+                          <span>3D Tajribani ochish</span>
+                        </div>
+                      </div>
                     </div>
                   )}
 

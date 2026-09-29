@@ -16,7 +16,7 @@ export default function TestimonialsSection({ currentLang }: TestimonialsSection
         color: "text-[#38bdf8]",
       },
       {
-        quote: "“Murakkab moliyaviy ma'lumotlarni 3D visual shaklga keltirish biz uchun orzu edi. AURA jamoasi uni har bir millisekundiga qadar sinchkovlik bilan amalga oshirdi.”",
+        quote: "“Murakkab moliyaviy ma'lumotlarni 3D visual shaklga keltirish biz uchun orzu edi. KHUSANOV.DEV jamoasi uni har bir millisekundiga qadar sinchkovlik bilan amalga oshirdi.”",
         author: "Sarah Lindqvist",
         role: "VP of Product, FinStream Zurich",
         initials: "SL",
@@ -43,7 +43,7 @@ export default function TestimonialsSection({ currentLang }: TestimonialsSection
         color: "text-[#38bdf8]",
       },
       {
-        quote: "“Projecting complex financial clusters into a responsive 3D space was a dream for us. AURA executed it down to the millisecond with relentless precision.”",
+        quote: "“Projecting complex financial clusters into a responsive 3D space was a dream for us. KHUSANOV.DEV executed it down to the millisecond with relentless precision.”",
         author: "Sarah Lindqvist",
         role: "VP of Product, FinStream Zurich",
         initials: "SL",

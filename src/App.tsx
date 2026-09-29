@@ -91,17 +91,20 @@ export default function App() {
       <CyberModal
         isOpen={cyberModalOpen}
         onClose={() => setCyberModalOpen(false)}
+        currentLang={lang}
       />
 
       <FintechModal
         isOpen={fintechModalOpen}
         onClose={() => setFintechModalOpen(false)}
+        currentLang={lang}
       />
 
       <TechDocsModal
         isOpen={!!techDocsProject}
         projectName={techDocsProject}
         onClose={() => setTechDocsProject(null)}
+        currentLang={lang}
       />
 
       <ConsultationModal

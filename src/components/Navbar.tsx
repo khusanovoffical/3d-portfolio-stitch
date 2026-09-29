@@ -58,7 +58,7 @@ export default function Navbar({ currentLang, onToggleLang, onOpenConsultation }
           >
             <div className="w-3 h-3 rounded-full bg-[#38bdf8] shadow-[0_0_12px_#38bdf8] group-hover:scale-125 transition-transform" />
             <span className="font-['Space_Grotesk'] text-xl font-bold tracking-tight text-[#e2e2ea] flex items-center">
-              AURA<span className="text-[#8ed5ff]">.DEV</span>
+              KHUSANOV<span className="text-[#8ed5ff]">.DEV</span>
             </span>
             <span className="font-['JetBrains_Mono'] text-[11px] font-medium px-2 py-0.5 rounded bg-[#282a30] text-[#bdc8d1] tracking-wide border border-white/5">
               v3.0
@@ -137,10 +137,10 @@ export default function Navbar({ currentLang, onToggleLang, onOpenConsultation }
               <div className="absolute right-0 mt-3 w-72 rounded-2xl bg-[#191c21] border border-white/10 p-4 shadow-2xl z-50 animate-in fade-in zoom-in-95 duration-200">
                 <div className="flex items-center gap-3 pb-3 border-b border-white/10">
                   <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#38bdf8] to-[#a855f7] flex items-center justify-center font-bold text-black font-['Space_Grotesk'] text-lg">
-                    AD
+                    KD
                   </div>
                   <div>
-                    <h4 className="font-['Space_Grotesk'] font-bold text-[#e2e2ea] text-sm">AURA.DEV Studio</h4>
+                    <h4 className="font-['Space_Grotesk'] font-bold text-[#e2e2ea] text-sm">KHUSANOV.DEV Studio</h4>
                     <p className="font-['JetBrains_Mono'] text-xs text-[#8ed5ff]">Creative Technologist</p>
                   </div>
                 </div>
@@ -163,7 +163,7 @@ export default function Navbar({ currentLang, onToggleLang, onOpenConsultation }
                 </div>
                 <div className="pt-2 border-t border-white/10 flex gap-2">
                   <a
-                    href="https://t.me"
+                    href="https://t.me/Khusanov_off"
                     target="_blank"
                     rel="noreferrer"
                     className="flex-1 py-1.5 rounded-lg bg-[#282a30] hover:bg-[#33353b] text-center font-['JetBrains_Mono'] text-xs text-[#e2e2ea] transition-colors"
