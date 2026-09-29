@@ -1,0 +1,6 @@
+{
+  "name": "AURA.DEV - 3D WebGL & Creative Technologist Portfolio",
+  "description": "Raqamli mahsulotlar va yuqori darajadagi 3D WebGL tajribalarini loyihalash hamda muhandislik amaliyoti.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
